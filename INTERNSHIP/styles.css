@@ -1,0 +1,493 @@
+/* ==========================
+   GENERAL STYLES
+========================== */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth; /* enable smooth scroll */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding: 40px 20px;
+    position: relative;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* ==========================
+   HEADER & NAVIGATION
+========================== */
+
+header {
+    position: relative;
+    padding: 20px 0;
+    text-align: left;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 170px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    z-index: 10;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e91e63;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ==========================
+   HOME PAGE STYLES
+========================== */
+
+.home-title {
+    font-size: 9rem;
+    font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Headings Positioned Between Left and Center */
+main h1, main h2, main h3 {
+    width: 40%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+main h1 {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+main h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 250px;
+    padding: 12px 24px;
+    background-color: #e91e63;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #d81b60;
+    transform: scale(1.05);
+}
+
+/* Page Setup */
+.page-layout {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top 30% - White */
+.top-section {
+    
+    background-color: white;
+    color: black;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Bottom 70% - Blue */
+/* Split Learn More Section */
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0; /* remove top-level padding */
+    margin: 0;
+  }
+  
+  .learn-top {
+    flex: 1;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .learn-bottom {
+    flex: 3;
+    background-color: #08082b;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  /* Fix for title text inside learn-top */
+  .features-title {
+    font-size: 1.2rem;
+    color: #e91e63;
+    margin-bottom: 10px;
+  }
+  
+  .features-subtitle {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+
+/* Text Styles */
+.top-text {
+    background-color: #d0d0e0;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.features-title {
+    color: #e91e63;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.features-subtitle {
+    color: #333;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Feature Boxes */
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #08082b;
+    padding: 30px;
+}
+
+.feature-box {
+    background-color: #1b2a4e;
+    width: 230px;
+    padding: 40px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 30px;
+    background-color: #2e333f;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.feature-box h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.feature-box p {
+    font-size: 13px;
+    color: #d0d0e0;
+    line-height: 1.5;
+}
+
+/* Overlay Images */
+.overlay {
+    position: absolute;
+    z-index: 0.5; /* changed from -1 to 1 so it's *above* background but *below* main content */
+    width: 250px;
+    height: auto;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.overlay-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.overlay-right {
+    top: 20px;
+    right: 20px;
+}
+
+/* Ensure top-section is the positioning context */
+.top-section {
+    position: relative; /* ✅ necessary so overlays position relative to it */
+    background-color: white;
+    color: black;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+.potato-image {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 600px;
+    height: auto;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+/* ==========================
+   RESPONSIVE STYLES
+========================== */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* stay above other content */
+    background-color: white; /* or your site’s nav background */
+  }
+  
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .home-title {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 40px;
+        margin-right: 20px;
+    }
+
+    .overlay {
+        width: 150px;
+        opacity: 0.7;
+    }
+
+    main h1, main h2, main h3 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .learn-more-btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+    }
+}
+.about-section {
+    background: white;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-images {
+    flex: 1;
+    position: relative;
+    min-width: 300px;
+    height: 400px;
+  }
+  
+  .about-images .img {
+    position: absolute;
+    max-width: 550px;
+    border-radius: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+  
+  .img1 {
+    top: 70px;
+    left: 0px;
+    width: 70%;         /* Allow it to grow responsively */
+    max-width: 700px;    /* Increase to make it bigger, try 700px if needed */
+    height: auto;        /* Keep the aspect ratio */
+  }
+  
+  
+  .img2 {
+    
+    width: 50%; 
+    top: 0px;
+    left: 200px;
+    z-index: 2;
+  }
+  
+  .placeholder-box {
+    background: transparent; /* Or solid color */
+    border: 5px solid #e91e63; /* Or solid border */
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:transparent;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left:280px;
+    top:310px;
+  }
+  
+  .placeholder-label {
+    position: absolute;
+    left: 340px; /* adjust for desired position */
+    top: 370px;  /* place above the box */
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #060a2e;
+    background: transparent;
+    padding: 2px 6px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  .placeholder-label1 {
+    position: absolute;
+    left: 340px; /* adjust for desired position */
+    top: 385px;  /* place above the box */
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #060a2e;
+    background: transparent;
+    padding: 2px 6px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-text h5 {
+    color: #ff4b7d;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .about-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+  }
+  
+  .about-text .subtitle {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .about-text p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .about-text .btn {
+    padding: 12px 24px;
+    background: #ff4b7d;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .about-text .btn:hover {
+    background: #e33969;
+  }
+  body {
+    padding-top: 80px; /* adjust to match nav height */
+  }
+  
