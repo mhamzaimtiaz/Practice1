@@ -161,9 +161,8 @@ main h3 {
 .bottom-section {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    padding: 0;
     margin: 0;
+    padding: auto;
 }
 
 .learn-top {
@@ -171,14 +170,14 @@ main h3 {
     background-color: white;
     color: black;
     text-align: center;
-    padding: 60px 20px;
+    padding: 20px;;
 }
 
 .learn-bottom {
     flex: 3;
     background-color: #08082b;
     color: white;
-    padding: 40px 20px;
+    
 }
 
 .top-text {
@@ -197,15 +196,16 @@ main h3 {
     align-items: flex-start;
     flex-wrap: wrap;
     background-color: #08082b;
-    padding: 30px;
+  
 }
 
 .feature-box {
     background-color: #1b2a4e;
     width: 230px;
-    padding: 40px 20px;
+    padding: 40px 15px;
     margin: 10px;
     border-radius: 10px;
+    margin-bottom: 20px;
     color: white;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
@@ -269,12 +269,12 @@ main h3 {
 
 .overlay-left {
     bottom: 20px;
-    left: 20px;
+    left: 0px;
 }
 
 .overlay-right {
     top: 20px;
-    right: 20px;
+    right: 0px;
 }
 
 .potato-image {
@@ -338,12 +338,12 @@ main h3 {
     }
 
     .overlay-left {
-        left: 10px;
+        left:0px;
         bottom: 10px;
     }
 
     .overlay-right {
-        right: 10px;
+        right:0 px;
         top: 10px;
     }
 
@@ -428,6 +428,7 @@ nav {
         flex-direction: column;
         align-items: flex-end;
         padding-right: 20px;
+        
     }
 
     nav ul li {
@@ -513,7 +514,7 @@ nav {
 
   .placeholder-box {
     background: transparent; /* Or solid color */
-    border: 3px solid #e91e63; /* Or solid border */
+    border: 2px solid #e91e63; /* Or solid border */
     width: 150px;
     height: 150px;
     display: flex;
@@ -522,13 +523,13 @@ nav {
     color:transparent;
     font-size: 1.2rem;
     font-weight: bold;
-    left:280px;
+    left:276px;
     top:310px;
   }
   
   .placeholder-label {
     position: absolute;
-    left: 340px; /* adjust for desired position */
+    left: 330px; /* adjust for desired position */
     top: 370px;  /* place above the box */
     font-size: 1.1rem;
     font-weight: 600;
@@ -540,10 +541,10 @@ nav {
   }
   .placeholder-label1 {
     position: absolute;
-    left: 340px; /* adjust for desired position */
+    left: 330px; /* adjust for desired position */
     top: 385px;  /* place above the box */
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     color: #060a2e;
     background: transparent;
     padding: 2px 6px;
@@ -580,7 +581,6 @@ nav {
     color: #666;
     margin-bottom: 20px;
   }
-  
   .about-text .btn {
     padding: 12px 24px;
     background: #ff4b7d;
@@ -588,7 +588,7 @@ nav {
     text-decoration: none;
     border-radius: 25px;
     font-weight: 600;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease; 
   }
   
   .about-text .btn:hover {
@@ -661,7 +661,6 @@ nav {
     font-size: 0.95rem;
     line-height: 1.7;
     margin-bottom: 20px;
-    margin-left:20px ;
   }
   
   .learn-more {
@@ -715,7 +714,7 @@ nav {
   .learn-bottom {
     background-color: #08082b;
     color: white;
-    padding: 40px 20px;
+    padding: 20px;
   }
   
   /* Stats Boxes */
@@ -724,7 +723,6 @@ nav {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 50px;
   }
   
   .feature-box {
@@ -779,6 +777,8 @@ nav {
       gap: 40px;
       margin-bottom: 80px;
       margin-top: 80px;
+      justify-content: center;
+      align-items: center;
     }
   
     .work-left,
@@ -886,7 +886,7 @@ nav {
     .feature-box h3 {
       font-size: 32px;
       margin: 8px 0;
-      color: #222;
+      color: white;
     }
     
     .feature-box p {
@@ -922,7 +922,10 @@ nav {
       min-width: 280px;
       max-width: calc(33.333% - 20px);
       box-sizing: border-box;
+      align-content: center;
+      justify-content: center;
     }
+
     
     
     
@@ -982,7 +985,7 @@ nav {
 
 .news-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -1129,6 +1132,7 @@ nav {
 
 /* Instagram Grid */
 .instagram-grid {
+  justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, 60px);
   grid-gap: 8px;
@@ -1158,7 +1162,7 @@ nav {
 
 .hamburger {
   display: none;
-  font-size: 24px;
+  font-size: 22px;
   padding: 12px 20px;
   cursor: pointer;
 }
@@ -1229,7 +1233,7 @@ nav {
     display: none;
     flex-direction: column;
     background: white;
-    width: 100%;
+    width: 30%;
     position: absolute;
     top: 60px;
     right: 0;
@@ -1264,9 +1268,6 @@ nav {
     display: block;
   }
 
-  /* ========================
-     POTATO IMAGE
-  ======================== */
   .potato-image {
     position: relative;
     width: 90vw;
@@ -1280,19 +1281,19 @@ nav {
   }
 
   @media (max-width: 768px) {
-    /* Fix for both feature sections */
     .features-section {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       gap: 20px;
       padding: 20px 10px;
       background-color: #08082b;
+      align-self: center;
     }
   
     .feature-box {
-      flex: 1 1 calc(100% - 40px); /* Full width minus margins */
+      flex: 1 1 calc(100% - 40px); 
       max-width: 90%;
       padding: 20px;
       box-sizing: border-box;
@@ -1326,14 +1327,13 @@ nav {
       line-height: 1.5;
     }
   
-    /* Optional: Make sure parent sections don’t clip content */
     .bottom-section,
     .learn-bottom {
       height: auto !important;
       min-height: unset !important;
     }
   }
-  /* ==== NAVBAR STYLES ==== */
+
 nav {
   position: relative;
   display: flex;
@@ -1342,13 +1342,12 @@ nav {
   padding: 20px;
 }
 
-/* Hamburger button - hidden by default, visible on mobile */
 .hamburger {
   display: none;
   font-size: 28px;
   cursor: pointer;
   position: absolute;
-
+margin-top: 20px;
   right: 20px;
   z-index: 1001;
 }
@@ -1376,6 +1375,7 @@ nav ul {
     padding: 10px 20px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 1000;
+    gap: 0px;
   }
 
   nav ul.active {
@@ -1496,4 +1496,52 @@ body, html {
   .navbar li {
     margin: 10px 0;
   }
+}
+@media screen and (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header {
+    margin-top: 0;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  section {
+   
+    min-height: calc(100vh - 80px); /* adjust based on header height */
+    box-sizing: border-box;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  
 }
