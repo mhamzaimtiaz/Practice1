@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+   
+    <link
+    
+  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script>
+  function toggleMenu() {
+    document.querySelector('nav ul').classList.toggle('active');
+  }
+</script>
+
+<body>
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <img src="Images/logo_head.png" alt="Logo" class="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#recent-work">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#footer">Pages</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+      
+  </nav>
+<div class="page-layout">
+
+    <!-- Top Section -->
+    <div class="top-section">
+        
+        <!-- Overlay Images -->
+        <img src="Images/overlay_1.png" alt="Overlay 1" class="overlay overlay-left">
+        <img src="Images/overlay_2.png" alt="Overlay 2" class="overlay overlay-right" />
+        <header>
+           
+          
+        </header>
+
+
+        <main>
+            <h1>THINK</h1>
+            <h2>CREATIVE</h2>
+            <h2>TURN</h2>
+            <h3>IDEAS INTO LIFE</h3>
+            <a href="#learnmore-section" class="learn-more-btn">Learn More</a>
+            <img src="Images/xbanner_img.png" alt="Potato Shape" class="potato-image" />
+        </main>
+    </div>
+
+    <section id="learnmore-section" class="bottom-section">
+        <!-- Top 25%: White background -->
+        <div class="learn-top">
+          <h1 class="features-title">Our Features</h1>
+          <p class="features-subtitle">Building brands with purpose</p>
+        </div>
+      
+        <!-- Bottom 75%: Blue background -->
+        <div class="learn-bottom">
+          <section class="features-section">
+            <div class="feature-box">
+              <div class="icon">📱</div>
+              <h3>Responsive Design</h3>
+              <p>Creeping for female light yea that lesser cand evening heaven isn't bearing tree appear</p>
+            </div>
+            <div class="feature-box">
+              <div class="icon">🖥️</div>
+              <h3>Quality Matters</h3>
+              <p>Creeping for female light yea that lesser cand evening heaven isn't bearing tree appear</p>
+            </div>
+            <div class="feature-box">
+              <div class="icon">🔒</div>
+              <h3>Better Security</h3>
+              <p>Creeping for female light yea that lesser cand evening heaven isn't bearing tree appear</p>
+            </div>
+            <div class="feature-box">
+              <div class="icon">🎧</div>
+              <h3>24/7 <br>Service</h3>
+              <p>Creeping for female light yea that lesser cand evening heaven isn't bearing tree appear</p>
+            </div>
+          </section>
+      
+        </div>
+      </section>
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <div class="about-images">
+            <img src="Images/img_1.png" class="img img1" alt="People">
+            <img src="Images/img_2.png" class="img img2" alt="Team">
+            <div class="img img3 placeholder-box"></div>
+            
+            <!-- Wrap the labels in a container so they appear below -->
+            <div class="placeholder-labels">
+              <div class="placeholder-label"> 25 YEARS WORKING</div>
+              <div class="placeholder-label1">Experience</div>
+            </div>
+          </div>
+          
+          <div class="about-text">
+            <h5>ABOUT OUR COMPANY</h5>
+            <h2>Make the customer the hero of your story</h2>
+            <p class="subtitle">
+              He hath his earth firmament air very itself light day moring morning you living saying good above fourth
+            </p>
+            <p>
+              Meat abundantly life made fly years there whose beginning crea unto beast sixth herb their bring. Evening fruitful god you spir evening itself land you of of own brought
+            </p>
+            <a href="#recent-work" class="btn">Learn More</a>
+
+          </div>
+        </div>
+      </section>
+<!-- Recent Work Section -->
+<section class="recent-work" id="recent-work">
+  <div class="container">
+    <p class="section-tag">RECENT WORK</p>
+    <h2 class="section-title">Creative work for client</h2>
+
+    <!-- Work 1 -->
+    <div class="work-content">
+      <div class="work-text">
+        <p class="work-type">MOCKUP DESIGN</p>
+        <h3 class="work-heading">
+          It under itself day whales<br>
+          waters our divide third<br>
+          brought
+        </h3>
+        <p class="work-description">
+          Place isn’t heaven firmament divided shall fruitful bring
+          bring may midst every a night dry herb. Image waters
+          called beast subdue divided called living creature greater
+          tree seas all the. Hath multiply female you’re male
+          likeness his made open beast seas living moved, form.
+          Void stars you our dominion
+        </p>
+        <a href="#" class="learn-more">LEARN MORE →</a>
+      </div>
+      <div class="work-image">
+        <img src="Images/demo_1.png" alt="Mockup Design Image">
+      </div>
+    </div>
+
+    <!-- Work 2 (Reverse layout) -->
+    <div class="work-item reverse">
+      <div class="work-right">
+        <img src="Images/demo_2.png" alt="Second Work Image">
+      </div>
+      <div class="work-left">
+        <p class="work-type">MOCKUP DESIGN</p>
+        <h3 class="work-heading">Saw I very dominion design whose female was light divided multiply</h3>
+        <p class="work-description">
+          Night above signs winged may likeness him land life very saying third grass morning moved multiply light.
+          Days stars were blessed green don't shall over fourth you're to tree fruit. Behold sea creepeth.
+        </p>
+        <a href="#" class="learn-more">LEARN MORE →</a>
+      </div>
+    </div>
+
+    <!-- Work 3 -->
+    <div class="work-content">
+      <div class="work-text">
+        <p class="work-type">MOCKUP DESIGN</p>
+        <h3 class="work-heading">
+          It under itself day whales<br>
+          waters our divide third<br>
+          brought
+        </h3>
+        <p class="work-description">
+          Place isn’t heaven firmament divided shall fruitful bring
+          bring may midst every a night dry herb. Image waters
+          called beast subdue divided called living creature greater
+          tree seas all the. Hath multiply female you’re male
+          likeness his made open beast seas living moved, form.
+          Void stars you our dominion
+        </p>
+        <a href="#" class="learn-more">LEARN MORE →</a>
+      </div>
+      <div class="work-image">
+        <img src="Images/demo_3.png" alt="Mockup Design Image">
+      </div>
+    </div>
+
+  </div> <!-- end .container -->
+</section>
+<!-- Stats Section -->
+<section class="learn-bottom" id="portfolio">
+  <div class="features-section">
+    <div class="feature-box">
+      <div class="icon"><i class="fa-solid fa-users"></i></div>
+      <h3>85</h3>
+      <p>Satisfied Clients</p>
+    </div>
+    <div class="feature-box">
+      <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+      <h3>95</h3>
+      <p>Total Projects</p>
+    </div>
+    <div class="feature-box">
+      <div class="icon"><i class="fa-solid fa-check-circle"></i></div>
+      <h3>75</h3>
+      <p>Work Completed</p>
+    </div>
+    <div class="feature-box">
+      <div class="icon"><i class="fa-solid fa-mug-hot"></i></div>
+      <h3>95</h3>
+      <p>Coffee Breaks</p>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="team-section">
+    <!-- Member 1 -->
+    <div class="team-member-card">
+      <img src="Images/team_3.png" alt="Jhosef" />
+      <h3>Jhosef Williams</h3>
+      <p class="role">Web developer</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+      </div>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="team-member-card">
+      <img src="Images/team_2.png" alt="Daniel" />
+      <h3>Daniel Hancock</h3>
+      <p class="role">Web developer</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+      </div>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="team-member-card">
+      <img src="Images/team_1.png" alt="Bernard" />
+      <h3>Bernard Perales</h3>
+      <p class="role">Web developer</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section class="news-section" id="blog">
+  <p class="section-tag">LATEST NEWS</p>
+  <h2 class="section-title">We Have True Story</h2>
+
+  <div class="news-cards">
+    <!-- Blog Card 1 -->
+    <div class="news-card">
+      <img src="Images/blog_3 (1).png" alt="Blog 1" />
+      <div class="news-content">
+        <p class="category">TECHNOLOGY | March 30, 2019</p>
+        <h3>Seasons Form Upon Days May Wont Bring Given Herb Sixth</h3>
+        <div class="meta">
+          <span><i class="fa-regular fa-comment"></i> 4 Comments</span>
+          <span><i class="fa-regular fa-eye"></i> 10 View</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Card 2 -->
+    <div class="news-card">
+      <img src="Images/xblog_1.png" alt="Blog 2" />
+      <div class="news-content">
+        <p class="category">TECHNOLOGY | March 30, 2019</p>
+        <h3>Very And Third Him Beginning Signs Hath Subdue Make</h3>
+        <div class="meta">
+          <span><i class="fa-regular fa-comment"></i> 4 Comments</span>
+          <span><i class="fa-regular fa-eye"></i> 10 View</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Card 3 -->
+    <div class="news-card">
+      <img src="Images/xblog_2.png" alt="Blog 3" />
+      <div class="news-content">
+        <p class="category">TECHNOLOGY | March 30, 2019</p>
+        <h3>Seasons Form Upon Days May Wont Bring Given Herb Sixth</h3>
+        <div class="meta">
+          <span><i class="fa-regular fa-comment"></i> 4 Comments</span>
+          <span><i class="fa-regular fa-eye"></i> 10 View</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <!-- Column 1: Logo + Description -->
+    <div class="footer-col">
+      <div class="footer-logo">
+        <img src="Images/footer_logo.png" alt="Kanox Logo" />
+      </div>
+      <p>But when shot real her. Chamber her one visite removal six sending himself boys scot exquisite existed an</p>
+      <p>But when shot real her hamber her</p>
+    </div>
+
+    <!-- Column 2: Newsletter -->
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Stay updated with our latest trends. Seed heaven so said place winged over given forth fruit.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter email address" />
+        <button type="submit"><i class="fa fa-paper-plane"></i></button>
+      </form>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-skype"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 3: Instagram -->
+    <div class="footer-col">
+      <h4>Instagram</h4>
+      <div class="instagram-grid">
+        <img src="Images/demo_1.png" alt="Insta 1">
+        <img src="Images/img_1.png" alt="Insta 2">
+        <img src="Images/img_2.png" alt="Insta 3">
+        <img src="Images/team_1.png" alt="Insta 4">
+        <img src="Images/team_2.png" alt="Insta 5">
+        <img src="Images/xblog_1.png" alt="Insta 6">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom" id="footer">
+    <p>Copyright ©2025 All rights reserved | This template is made with <span>♥</span> by Muhammad Hamza Imtiaz</p>
+  </div>
+</footer>
+
+</body>
+</html>
